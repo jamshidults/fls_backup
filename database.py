@@ -11,7 +11,7 @@ def get_database_path():
     base_path = os.environ.get('HOME', os.path.expanduser('~'))
 
     # Construct the full path
-    db_path = os.path.join(base_path, 'shared_folder', 'LOG', 'current', 'orders.db')
+    db_path = os.path.join(base_path, 'shared_folder', 'LOG_DB', 'current', 'orders.db')
 
     # Create directory if it doesn't exist
     db_directory = os.path.dirname(db_path)
